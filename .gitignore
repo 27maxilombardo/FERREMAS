@@ -1,0 +1,30 @@
+# Django
+*.pyc
+__pycache__/
+db.sqlite3
+*.sqlite3
+
+# Entornos virtuales
+venv/
+env/
+
+# Archivos del sistema
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+.DS_Store
+
+# Archivos de configuración
+*.env
+.env
+
+# Archivos generados por IDEs
+.vscode/
+.idea/
+
+# Archivos estáticos compilados
+/static/

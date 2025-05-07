@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - FERREMAS</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FERREMAS</h1>
+            <p>Tu ferretería de confianza</p>
+        </header>
+
+        <nav>
+            <ul class="nav">
+                <li><a href="{% url 'home' %}">Inicio</a></li>
+                <li><a href="{% url 'productos' %}">Productos</a></li>
+                <li><a href="{% url 'pedidos' %}">Pedidos</a></li>
+                <li><a href="{% url 'pagos' %}">Pagos</a></li>
+                <li><a href="{% url 'contacto' %}">Contacto</a></li>
+            </ul>
+        </nav>
+        
+
+        <section class="bienvenida">
+            <h2>Bienvenido</h2>
+            <p>Encuentra las mejores herramientas y materiales para tus proyectos.</p>
+        </section>
+
+        <section class="destacados">
+            <h2>Productos Destacados</h2>
+            <div class="producto">
+                <h3>Taladro Bosch</h3>
+                <p>Potente y confiable para trabajos pesados.</p>
+            </div>
+            <div class="producto">
+                <h3>Juego de Llaves</h3>
+                <p>Ideal para reparaciones en el hogar.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 FERREMAS - Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
